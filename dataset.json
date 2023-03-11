@@ -1,0 +1,50 @@
+[
+  {
+    "Name": "Marc-Andre ter Stegen",
+    "Country": "Germany",
+    "Position": "Goal Keeper",
+    "Image": "https://raw.githubusercontent.com/danielcristho/dotnet-display-fcb-players/main/ter-stegen-.jpg",
+    "Age": 30,
+    "Height": 1.87
+  },
+  {
+    "Name": "Araujo",
+    "Country": "Uruguay",
+    "Position": "Center Back",
+    "Image": "https://raw.githubusercontent.com/danielcristho/dotnet-display-fcb-players/main/araujo.jpg",
+    "Age": 24,
+    "Height": 1.88
+  },
+  {
+    "Name": "Frenkie De Jong",
+    "Country": "Netherlands",
+    "Position": "Center Midfielder",
+    "Image": "https://raw.githubusercontent.com/danielcristho/dotnet-display-fcb-players/main/dejong.jpg",
+    "Age": 25,
+    "Height": 1.80
+  },
+  {
+    "Name": "Sergio Busquets",
+    "Country": "Spain",
+    "Position": "Center Midfielder",
+    "Image": "https://raw.githubusercontent.com/danielcristho/dotnet-display-fcb-players/main/busquets.jpg",
+    "Age": 34,
+    "Height": 1.89
+  },
+  {
+    "Name": "Pablo Martín Páez Gavira",
+    "Country": "Spain",
+    "Position": "Attacking Midfielder",
+    "Image": "https://raw.githubusercontent.com/danielcristho/dotnet-display-fcb-players/main/gavi.jpg",
+    "Age": 18,
+    "Height": 1.73
+  },
+  {
+    "Name": "Pedro González López",
+    "Country": "Spain",
+    "Position": "Attacking Midfielder",
+    "Image": "https://raw.githubusercontent.com/danielcristho/dotnet-display-fcb-players/main/pedri.jpg",
+    "Age": 20,
+    "Height": 1.74
+  },
+]
