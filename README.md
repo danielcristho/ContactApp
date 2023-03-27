@@ -103,8 +103,53 @@ button untuk menambahkan kontak.
     - Daftar kontak ditampilkan namanya saja dalam bentuk list/collecttion view.
     - Buton ditambahkan di bagian bawah setelah daftar kontak.
     - Apabila salah satu kontak diklik maka akan membuka halaman detil kontak.
+    isi dari halaman utama, `Pages/ContactPage.xaml`
+    
+        ```csharp
+        <?xml version="1.0" encoding="utf-8" ?>
+        <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                     x:Class="ContactApp.Pages.ContactPage"
+                     Title="ContactPage">
+            <StackLayout>
+                <CollectionView x:Name="contactsListView"
+                                ItemsSource="{Binding Contacts}"
+                                SelectionMode="Single"
+                                SelectionChangedCommand="{Binding ContactSelectedCommand}">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Label Text="{Binding Name}" />
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+                <Button Text="Add Contact"
+                        Command="{Binding AddContactCommand}" />
+            </StackLayout>
+        </ContentPage>
+        ```
 2. Halaman detail kontak, yang berisi detail dari kontak yang diklik.
     - Data yang ditampilkan adalah nama, perusahaan, email, no. telepon kantor, dan nomor telepon pribadi.
     - Di dalam halaman ini pengguna dapat melakukan edit data kemudian 
       menyimpannya ataupun menghapus kontak tersebut. Tambahkan 2 button 
       (Save, dan Delete) untuk mengimplementasikan fitur tersebut.
+      isi dari halamaan kedua yang berupa datail kontak, `Pages/ContactListPage.xaml`
+      
+      ```csharp
+      <?xml version="1.0" encoding="utf-8" ?>
+        <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                     x:Class="ContactApp.Pages.ContactPage"
+                     Title="ContactPage">
+            <StackLayout>
+                <StackLayout>
+                    <Entry Text="{Binding Contact.Name}" Placeholder="Name" />
+                    <Entry Text="{Binding Contact.Company}" Placeholder="Company" />
+                    <Entry Text="{Binding Contact.Email}" Placeholder="Email" />
+                    <Entry Text="{Binding Contact.WorkPhone}" Placeholder="Work Phone" />
+                    <Entry Text="{Binding Contact.PersonalPhone}" Placeholder="Personal Phone" />
+                    <Button Text="Save" Command="{Binding SaveContactCommand}" />
+                    <Button Text="Delete" Command="{Binding DeleteContactCommand}" />
+                </StackLayout>
+            </StackLayout>
+        </ContentPage>
+      ```
