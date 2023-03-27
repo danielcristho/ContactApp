@@ -8,7 +8,7 @@ using SQLite;
 namespace ContactApp.Models
 {
     [Table("contact")]
-    public class Contact
+    public class ContactModel
     {
         [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
