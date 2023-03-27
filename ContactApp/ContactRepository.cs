@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using SQLite;
+﻿using SQLite;
 using ContactApp.Models; // Import ContactModel
 
-namespace ContactApp.Repositories
+namespace ContactApp
 {
     public class ContactRepository
     {
@@ -62,7 +57,7 @@ namespace ContactApp.Repositories
             return new List<Models.ContactModel>();
         }
 
-        public async Task UpdateContact(Models.ContactModel contact)
+        public void UpdateContact(Models.ContactModel contact)
         {
 
         }
