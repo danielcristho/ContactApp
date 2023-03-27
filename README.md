@@ -98,14 +98,13 @@ data
     ```
     
 Aplikasi terdiri dari 2 halaman, yaitu:
-1. Halaman utama, yang berisi daŌar kontak yang telah tersimpan di basis data dan satu 
+1. Halaman utama, yang berisi daftar kontak yang telah tersimpan di basis data dan satu 
 button untuk menambahkan kontak.
     - Daftar kontak ditampilkan namanya saja dalam bentuk list/collecttion view.
     - Buton ditambahkan di bagian bawah setelah daftar kontak.
     - Apabila salah satu kontak diklik maka akan membuka halaman detil kontak.
-2. Halaman deƟl kontak, yang berisi deƟl dari kontak yang diklik.
-    -Data yang ditampilkan adalah nama, perusahaan, email, no. telepon kantor, 
-    dan nomor telepon pribadi.
+2. Halaman detail kontak, yang berisi detail dari kontak yang diklik.
+    - Data yang ditampilkan adalah nama, perusahaan, email, no. telepon kantor, dan nomor telepon pribadi.
     - Di dalam halaman ini pengguna dapat melakukan edit data kemudian 
-menyimpannya ataupun menghapus kontak tersebut. Tambahkan 2 buƩon 
-(Save, dan Delete) untuk mengimplementasikan fitur tersebut.
+      menyimpannya ataupun menghapus kontak tersebut. Tambahkan 2 button 
+      (Save, dan Delete) untuk mengimplementasikan fitur tersebut.
