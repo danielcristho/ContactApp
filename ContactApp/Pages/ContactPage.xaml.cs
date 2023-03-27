@@ -1,9 +1,10 @@
 namespace ContactApp.Pages;
 
-public partial class ContactPage : ContentPage
+public partial class ContactsPage : ContentPage
 {
-	public ContactPage()
-	{
-		InitializeComponent();
-	}
+    public ContactsPage()
+    {
+        InitializeComponent();
+        BindingContext = new ContactsViewModel();
+    }
 }
